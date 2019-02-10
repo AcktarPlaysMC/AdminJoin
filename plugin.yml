@@ -1,0 +1,25 @@
+name: AdminJoin
+version: 1.0.0-NewApi
+api: 3.6.0
+author: ZacHack
+authors: [ZackHack, ItsMeAcktar]
+main: AdminJoin\Main
+
+commands:
+  adminjoin:
+    description: "AdminJoin main command"
+    usage: "/AdminJoin <message on op entry>"
+    permission: "adminjoin.command.adminjoin"
+
+permissions:
+  adminjoin:
+    default: op
+    description: "Allows ops to use the AdminJoin command"
+    children:
+      alias.command:
+        default: op
+        description: "Allows ops to use the AdminJoin command"
+        children:
+          alias.command.alias:
+            default: op
+            description: "Allows changing of the join message"
