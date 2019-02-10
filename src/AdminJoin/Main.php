@@ -7,7 +7,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\utils\Config;
 use pocketmine\utils\TextFormat;
-class MainClass extends PluginBase implements Listener{
+class Main extends PluginBase implements Listener{
 	public function onEnable(){
 		$this->getserver()->getPluginManager()->registerEvents($this, $this);
 		if(!is_dir($this->getDataFolder())){
