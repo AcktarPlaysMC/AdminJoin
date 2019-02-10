@@ -1,0 +1,7 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/AcktarPlaysMC/AdminJoin
+branches:
+- master
+projects:
+  AdminJoin:
+    path: ""
+...
